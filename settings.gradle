@@ -2,4 +2,6 @@ rootProject.name = 'multi-module-v2'
 include 'batch'
 include 'api'
 include 'core'
+include 'storage:jpa'
+findProject(':storage:jpa')?.name = 'jpa'
 
